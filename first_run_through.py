@@ -106,31 +106,45 @@ recipes = [
 # Step 2: ask user for ingredients and put them into a list
 ingredients = []
 
-num_of_ingredients = int(input("How many ingredients would you like to add? "))
+num_of_ingredients = int(input("How many ingredients do you have? "))
 
 for _ in range(num_of_ingredients):
     ingredient = input("Enter an ingredient: ")
     ingredients.append(ingredient)
 
-print("Your list of ingredients:")
+
+# Step 3: eliminate recipes that user does not have all the ingredients for
+def eliminate_recipes(recipes, ingredients):
+    valid_recipes = [ ]
+    for recipe_name, recipe_ingredients in recipes:
+        for item in recipe_ingredients:
+            if item not in ingredients:
+                break
+        else:
+            valid_recipes.append(recipe_name)
+    return valid_recipes
+
+print("Your ingredients:")
 print(ingredients)
 
 
-# Step 3: eliminate recipes that user does not have all the ingredients for
-for recipe in recipes:
-    for ingredient in recipe:
-        if ingredient not in ingredients:
-            recipes.remove(recipe)
-
-
 # Step 4: match ingredients inputted with ingredients in recipes
+match_recipes = eliminate_recipes(recipes, ingredients)
+
+if match_recipes:
+    print("You can make the following recipes:")
+    for recipe in match_recipes:
+        print(f"- {recipe}")
+else:
+    print("Sorry, you don't have enough ingredients for a recipe.")
+
+
+# Older Code
 '''for ingredients in num_of_ingredients:
     if ingredients in recipes:'''
-        
 
 
-
-def match_ingred():
+'''def match_ingred():
     string = list(c)
     n = 0
     match_score = 0
@@ -142,7 +156,7 @@ def match_ingred():
            n += 1
     return match_score
 
-print(match_ingred())
+print(match_ingred())'''
 
 
 '''

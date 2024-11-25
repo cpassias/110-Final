@@ -16,7 +16,7 @@ recipes = [
         ('Scrambled Eggs', ['eggs']),
         ('Cheesy Scrambled Eggs', ['eggs', 'cheese']),
         ('Sunny Side Eggs', ['eggs']),
-        ('Omelette', ['eggs']),
+        ('Omelette', ['eggs','cheese']),
         ('Hot Dogs', ['buns', 'hotdog']),
         ('Chili Cheese Dogs', ['buns', 'hotdog', 'chili', 'cheese']),
         ('Tacos', ['meat', 'shell']),

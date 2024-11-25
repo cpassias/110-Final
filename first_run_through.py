@@ -5,8 +5,9 @@
 
 # Step 1: import recipes 
 from recipes import recipes
+from websites import websites
 
-
+print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 # Step 2: ask user for ingredients and put them into a list
 ingredients = []
 
@@ -37,12 +38,31 @@ match_recipes = eliminate_recipes(recipes, ingredients)
 
 if match_recipes:
     print("You can make the following recipes:")
+    i = 0
     for recipe in match_recipes:
-        print(f"- {recipe}")
+        i += 1
+        print(i, f"- {recipe}")
+    invalid_choice = True
+    while(invalid_choice):
+        choice = input("Which would you like to choose?\n")
+        try:
+            choice = (int)(choice)
+        except:
+            print("Invalid choice, choose a number listed.")
+        else:
+            if not (1 <= choice and choice <= i):
+                print("Invalid choice, choose a number listed.")
+            else:
+                invalid_choice = False
+                print(websites[match_recipes[choice-1]])
+
+
+
+    
 else:
     print("Sorry, you don't have enough ingredients for a recipe.")
 
-
+'''
 # Step 5: ask to choose a recipe
 def recipe_options():
     valid_recipes = []
@@ -54,7 +74,7 @@ def recipe_options():
         print("Sorry, that is not a valid recipe.")
     else:
         if options in valid_recipes:
-    
+'''
 
 
 

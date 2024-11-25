@@ -2,20 +2,24 @@
 # Email: caileyoconne@umass.edu, cpassias@umass.edu
 # Spire ID: 34689215, 34317403
 
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
 
 # Step 1: import recipes 
 from recipes import recipes
 from websites import websites
 
-print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+
 # Step 2: ask user for ingredients and put them into a list
 ingredients = []
 
 num_of_ingredients = int(input("How many ingredients do you have? "))
+print("\n")
 
 for _ in range(num_of_ingredients):
     ingredient = input("Enter an ingredient: ")
     ingredients.append(ingredient)
+    print("\n")
 
 
 # Step 3: eliminate recipes that user does not have all the ingredients for
@@ -31,6 +35,7 @@ def eliminate_recipes(recipes, ingredients):
 
 print("Your ingredients:")
 print(ingredients)
+print("\n")
 
 
 # Step 4: match ingredients inputted with ingredients in recipes
@@ -44,7 +49,9 @@ if match_recipes:
         print(i, f"- {recipe}")
     invalid_choice = True
     while(invalid_choice):
-        choice = input("Which would you like to choose?\n")
+        print("\n")
+        choice = input("Which would you like to choose? ")
+        print("\n")
         try:
             choice = (int)(choice)
         except:
@@ -54,14 +61,15 @@ if match_recipes:
                 print("Invalid choice, choose a number listed.")
             else:
                 invalid_choice = False
+                print("Take a look at the following recipe & enjoy!")
                 print(websites[match_recipes[choice-1]])
-
-
-
-    
 else:
-    print("Sorry, you don't have enough ingredients for a recipe.")
+    print("Sorry, you don't have enough ingredients for a recipe.\n")
+    print("Take a look at this site to explore some possible savory recipes:\nhttps://www.nytimes.com/article/easy-dinner-ideas.html\n")
+    print("And don't forget your sweets!\nhttps://www.food.com/ideas/top-dessert-recipes-6930#c-791401\n")
 
+
+# Scrapped
 '''
 # Step 5: ask to choose a recipe
 def recipe_options():
@@ -75,11 +83,6 @@ def recipe_options():
     else:
         if options in valid_recipes:
 '''
-
-
-
-
-
 
 
 # Older Code

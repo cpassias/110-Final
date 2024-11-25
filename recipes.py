@@ -19,7 +19,7 @@ recipes = [
         ('Omelette', ['eggs','cheese']),
         ('Hot Dogs', ['buns', 'hotdog']),
         ('Chili Cheese Dogs', ['buns', 'hotdog', 'chili', 'cheese']),
-        ('Tacos', ['meat', 'shell']),
+        ('Tacos', ['meat', 'taco shell']),
         ('Tacos w/Chicken', ['chicken', 'shell']),
         ('Taco Salad', ['meat', 'chips', 'lettuce']),
         ('Grilled Chicken Salad', ['lettuce', 'chicken']),
@@ -46,8 +46,8 @@ recipes = [
         ('Pepperoni Pizza', ['dough', 'sauce', 'cheese', 'pepperoni']),
         ('Pizza w/Meat', ['dough', 'sauce', 'cheese', 'meat']),
         ('Pizza w/Chicken', ['dough', 'sauce', 'cheese', 'chicken']),
-        ('Nachos w/Meat', ['chips', 'meat', 'salsa']),
-        ('Nachos w/Chicken', ['chips', 'chicken', 'salsa']),
+        ('Nachos w/Meat', ['chips', 'meat', 'salsa', 'cheese']),
+        ('Nachos w/Chicken', ['chips', 'chicken', 'salsa', 'cheese']),
         ('Nachos w/Cheese', ['chips', 'meat', 'salsa', 'cheese']),
         ('Ice Cream Sandwiches', ['ice cream', 'crackers']),
         ('Smore Sandwiches', ['chocolate', 'crackers', 'marshmallows']),
@@ -94,4 +94,7 @@ recipes = [
         ('Oatmeal', ['oats', 'water', 'milk', 'sugar', 'cinnamon']),
         ('Chicken Noodle Soup', ['chicken broth', 'chicken', 'noodles', 'carrots', 'celery']),
         ('Greek Salad', ['cucumber', 'tomato', 'red onion', 'kalamata olives', 'feta cheese']),
+        ('Cake', ['sugar', 'flour', 'butter', 'eggs', 'vanilla extract', 'baking powder', 'milk']),
+        ('Brownies', ['butter', 'sugar', 'cocoa powder', 'vanilla extract', 'salt', 'eggs', 'flour']),
+        ('Meatballs', ['beef', 'eggs', 'breadcrumbs'])
     ]

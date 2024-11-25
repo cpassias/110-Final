@@ -13,7 +13,7 @@ websites = {
     'Turkey Sandwich': ['https://www.delish.com/cooking/recipe-ideas/a19666447/turkey-sandwich-recipe/'],
     'Turkey Sandwich w/Cheese': ['https://www.tasteofhome.com/recipes/turkey-and-cheese-panini/'],
     'Sausage & Egg Muffin': ['https://www.foodnetwork.com/recipes/sausage-egg-and-cheese-muffin-sandwich-recipe/'],
-    'Scrambled Eggs': ['https://www.simplyrecipes.com/recipes/how_to_make_scrambled_eggs/'],
+    'Scrambled Eggs': ['https://www.loveandlemons.com/scrambled-eggs-recipe/'],
     'Cheesy Scrambled Eggs': ['https://www.allrecipes.com/recipe/232738/creamy-cheesy-scrambled-eggs/'],
     'Sunny Side Eggs': ['https://www.allrecipes.com/recipe/245003/sunny-side-up-eggs/'],
     'Omelette': ['https://www.foodnetwork.com/recipes/basic-omelette-recipe/'],
@@ -93,4 +93,8 @@ websites = {
     'Classic BLT Sandwich': ['https://www.allrecipes.com/recipe/236896/classic-blt/'],
     'Oatmeal': ['https://www.allrecipes.com/recipe/220520/morning-glory-oatmeal/'],
     'Chicken Noodle Soup': ['https://www.simplyrecipes.com/recipes/chicken_noodle_soup/'],
+    'Greek Salad': ['https://www.loveandlemons.com/greek-salad/'],
+    'Cake': ['https://www.allrecipes.com/recipe/17481/simple-white-cake/'],
+    'Brownies': ['https://www.inspiredtaste.net/24412/cocoa-brownies-recipe/'],
+    'Meatballs': ['https://www.iheartnaptime.net/meatball-recipe/#recipe']
 }

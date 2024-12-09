@@ -13,8 +13,16 @@ from websites import websites
 # Step 2: ask user for ingredients and put them into a list
 ingredients = []
 
-num_of_ingredients = int(input("How many ingredients do you have? "))
-print("\n")
+while True:
+    try:
+        num_of_ingredients = int(input("How many ingredients do you have? "))
+        print("\n")
+        break  # Exit the loop if the input is valid
+    except ValueError:
+        print("\n")
+        print("Invalid choice, please input an integer.")
+        print("\n")
+
 
 for _ in range(num_of_ingredients):
     ingredient = input("Enter an ingredient: ")
@@ -62,7 +70,7 @@ if match_recipes:
             else:
                 invalid_choice = False
                 print("Take a look at the following recipe & enjoy!")
-                print(websites[match_recipes[choice-1]])
+                print(websites[match_recipes[choice-1]],"\n")
 else:
     print("Sorry, you don't have enough ingredients for a recipe.\n")
     print("Take a look at this site to explore some possible savory recipes:\nhttps://www.nytimes.com/article/easy-dinner-ideas.html\n")
